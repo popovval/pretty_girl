@@ -9,6 +9,6 @@ def get_file_content(path):
 
 
 def get_pretty_message():
-    path = './stimul_words.json'
+    path = 'data/stimul_words.json'
     words_list = get_file_content(path)
     return random.choice(words_list)
