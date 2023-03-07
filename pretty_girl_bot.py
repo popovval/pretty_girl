@@ -7,7 +7,7 @@ from messages import get_pretty_message
 token = os.environ.get('TOKEN')
 
 bot = telebot.TeleBot(token)
-logging.basicConfig(filename='log.log', stream=sys.stdout, level=logging.INFO)
+logging.basicConfig(filename='log.log', level=logging.INFO)
 
 
 @bot.message_handler(commands=['start'])
